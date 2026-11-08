@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-wa-teal: #00a884;
+  --color-wa-teal-hover: #06cf9c;
+  --color-wa-dark-bg: #0b141a;
+  --color-wa-panel: #111b21;
+  --color-wa-subtle: #202c33;
+  --color-wa-bubble-out: #005c4b;
+  --color-wa-bubble-in: #202c33;
+  --color-wa-text-primary: #e9edef;
+  --color-wa-text-secondary: #8696a0;
+  --color-wa-border: #222e35;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbars matching WhatsApp Web */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(134, 150, 160, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(134, 150, 160, 0.4);
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-150%) skewX(-12deg); }
+  100% { transform: translateX(350%) skewX(-12deg); }
+}
+
+@keyframes progress-fast {
+  0% { width: 0%; opacity: 1; }
+  80% { width: 95%; opacity: 1; }
+  100% { width: 100%; opacity: 0; }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+}
+
+.animate-progress-fast {
+  animation: progress-fast 3s infinite ease-out;
+}

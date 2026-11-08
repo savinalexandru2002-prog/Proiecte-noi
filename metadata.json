@@ -1,0 +1,11 @@
+{
+  "name": "Claude AI // ALEXIA-OMEGA Terminal Tactic 2026",
+  "description": "Unitatea de inteligență artificială Claude AI & ALEXIA-OMEGA pe WhatsApp cu transmisiuni live TV, rapoarte SCP și răspunsuri inteligente la orice întrebare.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API",
+    "MAJOR_CAPABILITY_PWA"
+  ]
+}

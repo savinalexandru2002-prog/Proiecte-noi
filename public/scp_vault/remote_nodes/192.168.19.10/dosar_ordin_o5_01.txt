@@ -1,0 +1,5 @@
+[ORDIN DIRECT DE CONȚINERE - O5-01]
+Destinație: Situl-19
+Autor: Alexandru
+Status: Prioritate Maximă
+Criptare: AES-256
